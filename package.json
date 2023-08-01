@@ -1,7 +1,7 @@
 {
 	"name": "@hurx/cli",
 	"displayName": "Hurx CLI",
-	"description": "The Hurx command line interface.",
+	"description": "The Hurx command line interface",
 	"version": "0.0.1",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
