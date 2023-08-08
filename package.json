@@ -1,40 +1,40 @@
 {
-	"name": "@hurx/cli",
-	"displayName": "Hurx CLI",
-	"description": "The Hurx command line interface",
-	"version": "0.0.1",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"dependencies": {
-		"ansi-colors": "^4.1.3",
-		"chalk": "4.0.0",
-		"ts-node-dev": "^2.0.0",
-		"typescript": "^5.1.6"
-	},
-	"devDependencies": {
-		"rimraf": "^4.4.1"
-	},
-	"scripts": {
-		"compile": "tsc",
-		"start": "ts-node-dev --watch ./ --respawn --ignore-watch node_modules,dist ./src --start",
-		"clean": "rimraf --glob ./dist",
-		"prepackage": "npm run clean && npm run compile && ts-node-dev ./prepackage --execute-prepackage",
-		"package": "cd ./dist && npm publish --access public"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/shurks/hurx-library.git"
-	},
-	"keywords": [
-		"hurx",
-		"language",
-		"programming language",
-		"hurx language"
-	],
-	"author": "Stan Hurks",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/shurks/hurx-library/issues"
-	},
-	"homepage": "https://github.com/shurks/hurx-library#readme"
+    "name": "@hurx/cli",
+    "displayName": "Hurx CLI",
+    "description": "The Hurx command line interface",
+    "version": "0.0.6",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "dependencies": {
+        "ansi-colors": "^4.1.3",
+        "chalk": "4.0.0"
+    },
+    "devDependencies": {
+        "rimraf": "^4.4.1",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.1.6"
+    },
+    "scripts": {
+        "compile": "tsc",
+        "start": "ts-node-dev --watch ./ --respawn --ignore-watch node_modules,dist ./src --start",
+        "clean": "rimraf --glob ./dist",
+        "prepackage": "npm run clean && npm run compile && ts-node-dev ./prepackage --execute-prepackage",
+        "package": "cd ./dist && npm publish --access public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shurks/hurx-library.git"
+    },
+    "keywords": [
+        "hurx",
+        "language",
+        "programming language",
+        "hurx language"
+    ],
+    "author": "Stan Hurks",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/shurks/hurx-library/issues"
+    },
+    "homepage": "https://github.com/shurks/hurx-library#readme"
 }
